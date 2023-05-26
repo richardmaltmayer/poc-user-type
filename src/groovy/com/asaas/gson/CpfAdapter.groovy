@@ -12,7 +12,7 @@ class CpfAdapter extends TypeAdapter<Cpf> {
         if (cpf.value) {
             writer.value(cpf.value)
         } else {
-            writer.value("")
+            writer.nullValue()
         }
     }
 

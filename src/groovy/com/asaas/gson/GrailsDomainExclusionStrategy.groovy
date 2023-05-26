@@ -7,6 +7,8 @@ class GrailsDomainExclusionStrategy implements ExclusionStrategy {
 
     @Override
     boolean shouldSkipField(FieldAttributes fieldAttributes) {
+        if (fieldAttributes.getName() == "version") return true
+
         return false
     }
 
